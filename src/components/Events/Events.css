@@ -1,0 +1,196 @@
+.events {
+    background: var(--gray-50);
+}
+
+.events__label {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 16px;
+    padding: 6px 16px;
+    background: linear-gradient(135deg, rgba(107, 33, 168, 0.08), rgba(147, 51, 234, 0.12));
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-purple);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.events__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+}
+
+.events__card {
+    display: flex;
+    gap: 24px;
+    padding: 28px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--gray-100);
+    transition: all var(--transition-base);
+}
+
+.events__card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: transparent;
+}
+
+.events__card-date {
+    flex-shrink: 0;
+    width: 68px;
+    height: 76px;
+    border-radius: var(--radius-md);
+    background: var(--primary-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    box-shadow: 0 4px 12px rgba(107, 33, 168, 0.25);
+}
+
+.events__card-day {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.events__card-month {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.events__card-content {
+    flex: 1;
+}
+
+.events__card-tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: color-mix(in srgb, var(--tag-color) 10%, transparent);
+    color: var(--tag-color);
+    margin-bottom: 10px;
+}
+
+.events__card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.events__card-desc {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.events__card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.events__card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--gray-400);
+}
+
+.events__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-purple);
+    transition: all var(--transition-fast);
+}
+
+.events__card-link:hover {
+    gap: 10px;
+    color: var(--primary-purple-dark);
+}
+
+/* More Button */
+.events__more {
+    text-align: center;
+}
+
+.events__more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 36px;
+    background: var(--white);
+    color: var(--primary-purple);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: var(--radius-full);
+    border: 2px solid rgba(107, 33, 168, 0.2);
+    transition: all var(--transition-base);
+}
+
+.events__more-btn:hover {
+    border-color: var(--primary-purple);
+    background: rgba(107, 33, 168, 0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(107, 33, 168, 0.1);
+}
+
+/* Animations */
+.events--visible .events__card {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.events--visible .events__card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.events--visible .events__card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.events--visible .events__card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.events--visible .events__card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .events__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events__card {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .events__card-date {
+        width: 100%;
+        height: 54px;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
