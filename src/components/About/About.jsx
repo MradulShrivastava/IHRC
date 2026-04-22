@@ -71,7 +71,7 @@ const About = () => {
 
                     <div className="about__founder-content">
                         <span className="about__founder-tag">Founder & Visionary</span>
-                        <h3 className="about__founder-name">Mradul Shrivastava</h3>
+                        <h3 className="about__founder-name">Raman Shukla</h3>
                         <p className="about__founder-role">Founder, Indore HR Circle</p>
 
                         <div className="about__founder-divider">
@@ -79,7 +79,7 @@ const About = () => {
                         </div>
 
                         <p className="about__founder-bio">
-                            With a deep passion for building meaningful HR communities, Mradul Shrivastava
+                            With a deep passion for building meaningful HR communities, Raman Shukla
                             founded Indore HR Circle to bridge the gap between HR professionals in the city.
                             His vision was simple yet powerful — create a space where HR leaders can openly
                             share experiences, learn from each other, and grow together.

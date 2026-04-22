@@ -21,9 +21,9 @@ const Hero = () => {
     }, [])
 
     const stats = [
-        { icon: <FiUsers />, value: '500+', label: 'HR Professionals' },
-        { icon: <FiCalendar />, value: '50+', label: 'Events Hosted' },
-        { icon: <FiAward />, value: '10+', label: 'Years of Impact' },
+        { icon: <FiUsers />, value: '100+', label: 'HR Professionals' },
+        { icon: <FiCalendar />, value: '10+', label: 'Events Hosted' },
+        { icon: <FiAward />, value: '2+', label: 'Years of Impact' },
     ]
 
     return (
