@@ -9,25 +9,25 @@ const Testimonials = () => {
     const testimonials = [
         {
             name: 'Mradul Shrivastava',
-            role: 'HR Director, TCS Indore',
+            role: 'Software Developer',
             text: 'IHRC has been a game-changer for my career. The connections I\'ve made and the knowledge I\'ve gained have been invaluable. The community feels like a family!',
             rating: 5
         },
         {
-            name: 'Raman Chapri',
-            role: 'CHRO, Infosys BPM',
+            name: 'Raman Shukla',
+            role: 'CEO , IHRC',
             text: 'The caliber of events and workshops organized by Indore HR Circle is exceptional. Every session adds real value and the networking opportunities are unmatched.',
             rating: 5
         },
         {
             name: 'Sunny Shukla',
-            role: 'People & Culture Lead, Wipro',
+            role: 'HR Manager',
             text: 'As someone new to Indore, IHRC helped me build my professional network from scratch. The warmth and support from fellow members is truly remarkable.',
             rating: 5
         },
         {
             name: 'Rishika Sharma',
-            role: 'HR Manager, Persistent Systems',
+            role: 'HR Manager',
             text: 'The mentorship program at IHRC connected me with incredible senior leaders who guided my career transition. Forever grateful for this community!',
             rating: 5
         }

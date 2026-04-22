@@ -22,41 +22,15 @@ const Events = () => {
 
     const events = [
         {
-            date: { day: '15', month: 'MAR' },
-            title: 'HR Leaders Summit 2026',
-            description: 'Annual flagship event bringing together top HR leaders from Indore and Central India for a day of insights and networking.',
-            location: 'Sayaji Hotel, Indore',
-            time: '9:00 AM - 6:00 PM',
+            date: { day: '24', month: 'April' },
+            title: 'Industry–Academia Gap and Current Trends in Recruitment',
+            description: 'A discussion on the Industry–Academia gap and emerging recruitment trends shaping the future workforce.',
+            location: 'Chameli Devi Group of Institutions , Indore',
+            time: '11:00 AM – 1:20 PM',
             tag: 'Summit',
             tagColor: '#6B21A8'
         },
-        {
-            date: { day: '22', month: 'MAR' },
-            title: 'Talent Acquisition Masterclass',
-            description: 'Deep dive into modern recruitment strategies, employer branding, and building high-performing talent pipelines.',
-            location: 'Brilliant Convention Centre',
-            time: '2:00 PM - 5:00 PM',
-            tag: 'Workshop',
-            tagColor: '#14B8A6'
-        },
-        {
-            date: { day: '05', month: 'APR' },
-            title: 'HR Tech & Innovation Meetup',
-            description: 'Explore the latest HR technology trends, AI in HR, and digital transformation of people processes.',
-            location: 'Cube Space Coworking, Vijay Nagar',
-            time: '6:00 PM - 8:30 PM',
-            tag: 'Meetup',
-            tagColor: '#EC4899'
-        },
-        {
-            date: { day: '18', month: 'APR' },
-            title: 'Employee Wellness Workshop',
-            description: 'Learn strategies for building a culture of well-being, mental health support, and employee engagement programs.',
-            location: 'Hotel Radisson Blu, Indore',
-            time: '10:00 AM - 1:00 PM',
-            tag: 'Workshop',
-            tagColor: '#F59E0B'
-        }
+        
     ]
 
     return (
