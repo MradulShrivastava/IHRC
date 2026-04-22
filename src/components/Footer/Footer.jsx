@@ -96,11 +96,11 @@ const Footer = () => {
                         <div className="footer__contact-items">
                             <div className="footer__contact-item">
                                 <FiMail className="footer__contact-icon" />
-                                <span>info@indorehrcircle.com</span>
+                                <span>indorehrcircle@gmail.com</span>
                             </div>
                             <div className="footer__contact-item">
                                 <FiPhone className="footer__contact-icon" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 99269 80076</span>
                             </div>
                             <div className="footer__contact-item">
                                 <FiMapPin className="footer__contact-icon" />

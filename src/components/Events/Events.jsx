@@ -30,12 +30,14 @@ const Events = () => {
             tag: 'Summit',
             tagColor: '#6B21A8'
         },
+
         
+
     ]
 
     return (
-        <section className="events section" id="events" ref={sectionRef}>
-            <div className="container">
+        <section className="events section " id="events" ref={sectionRef}>
+            <div className="container ">
                 <span className="events__label">Upcoming Events</span>
                 <h2 className="section-title">
                     Don't Miss Our{' '}
@@ -46,7 +48,13 @@ const Events = () => {
                     to accelerate your growth and expand your network.
                 </p>
 
-                <div className="events__grid">
+                <div
+                    style={
+                        events?.length === 1
+                            ? { display: "flex", justifyContent: "center" }
+                            : {}
+                    }
+                    className="events__grid">
                     {events.map((event, index) => (
                         <div className="events__card" key={index}>
                             <div className="events__card-date">
