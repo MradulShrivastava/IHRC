@@ -46,7 +46,7 @@ const About = () => {
                 <div className="about__header">
                     <span className="about__label">About IHRC</span>
                     <h2 className="section-title">
-                        Building Indore's Strongest{' '}
+                        Building Central India's Strongest{' '}
                         <span className="gradient-text">HR Community</span>
                     </h2>
                     <p className="section-subtitle">

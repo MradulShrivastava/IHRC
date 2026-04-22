@@ -48,7 +48,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <p className="footer__brand-desc">
-                            Building Indore's strongest HR community since 2016.
+                            Building Central India's Strongest HR Community.
                             Empowering HR professionals through knowledge, connections, and growth opportunities.
                         </p>
                         <div className="footer__socials">

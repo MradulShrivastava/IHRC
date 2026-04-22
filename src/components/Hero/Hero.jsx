@@ -36,11 +36,11 @@ const Hero = () => {
                 <div className="hero__bg-grid"></div>
             </div>
 
-            <div className="hero__container container">
+            <div style={{marginTop:"60PX"}} className="hero__container container">
                 <div className="hero__content">
                     <div className="hero__badge">
                         <span className="hero__badge-dot"></span>
-                        Indore's Premier HR Network
+                        M.P Premier HR Network
                     </div>
 
                     <h1 className="hero__title">

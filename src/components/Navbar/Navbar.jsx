@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FiChevronDown, FiMenu, FiX } from 'react-icons/fi'
 import './Navbar.css'
+import logo from "../../Assets/Images/ihrclogo.jpeg"
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -40,9 +41,7 @@ const Navbar = () => {
             <div className="navbar__container container">
                 {/* Logo */}
                 <a href="#" className="navbar__logo">
-                    <div className="navbar__logo-icon">
-                        <span className="navbar__logo-text-inner">IHRC</span>
-                    </div>
+                    <img height={95} width={95} src={logo} alt="" />
                     <div className="navbar__logo-text">
                         <span className="navbar__brand-name">Indore HR Circle</span>
                         <span className="navbar__brand-tagline">Connect • Learn • Grow</span>
