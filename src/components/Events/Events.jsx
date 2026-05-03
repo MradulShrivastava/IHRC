@@ -30,8 +30,18 @@ const Events = () => {
             tag: 'Summit',
             tagColor: '#6B21A8'
         },
+        {
+            date: { day: '25', month: 'May' },
+            title: 'Industry–Academia Gap and Current Trends in Recruitment',
+            description: 'A discussion on the Industry–Academia gap and emerging recruitment trends shaping the future workforce.',
+            location: 'Chameli Devi Group of Institutions , Indore',
+            time: '11:00 AM – 1:20 PM',
+            tag: 'Summit',
+            tagColor: '#6B21A8'
+        },
 
-        
+
+
 
     ]
 

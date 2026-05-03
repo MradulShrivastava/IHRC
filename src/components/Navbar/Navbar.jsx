@@ -17,6 +17,7 @@ const Navbar = () => {
     }, [])
 
     const navLinks = [
+        { label: 'About Us', href: '#about' },
         {
             label: 'Member Benefits',
             hasDropdown: true,
@@ -27,7 +28,7 @@ const Navbar = () => {
             hasDropdown: true,
             items: ['Discussion Forums', 'Local Chapters', 'Industry Groups', 'LinkedIn Group']
         },
-        { label: 'About Us', href: '#about' },
+
         { label: 'Events', href: '#events' },
         { label: 'Contact', href: '#contact' }
     ]

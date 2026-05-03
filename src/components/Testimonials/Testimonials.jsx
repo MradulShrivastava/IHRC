@@ -14,20 +14,20 @@ const Testimonials = () => {
             rating: 5
         },
         {
-            name: 'Raman Shukla',
-            role: 'CEO , IHRC',
+            name: 'Vishakha Karnik',
+            role: 'HR',
             text: 'The caliber of events and workshops organized by Indore HR Circle is exceptional. Every session adds real value and the networking opportunities are unmatched.',
             rating: 5
         },
         {
-            name: 'Sunny Shukla',
+            name: 'Rashi Jain',
             role: 'HR Manager',
             text: 'As someone new to Indore, IHRC helped me build my professional network from scratch. The warmth and support from fellow members is truly remarkable.',
             rating: 5
         },
         {
-            name: 'Rishika Sharma',
-            role: 'HR Manager',
+            name: 'Anamika Mishra',
+            role: 'HR',
             text: 'The mentorship program at IHRC connected me with incredible senior leaders who guided my career transition. Forever grateful for this community!',
             rating: 5
         }

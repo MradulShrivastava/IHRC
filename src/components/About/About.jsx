@@ -44,14 +44,14 @@ const About = () => {
             <div className="container">
                 {/* Section Header */}
                 <div className="about__header">
-                    <span className="about__label">About IHRC</span>
+                    <span className="about__label">About Indore Hr Circle</span>
                     <h2 className="section-title">
                         Building Central India's Strongest{' '}
                         <span className="gradient-text">HR Community</span>
                     </h2>
                     <p className="section-subtitle">
                         Indore HR Circle is more than a network — it's a movement to elevate HR practices,
-                        nurture talent, and create lasting professional relationships.
+                        to enpower future talent , Upcoming Professionals and create lasting professional relationships.
                     </p>
                 </div>
 
@@ -85,9 +85,9 @@ const About = () => {
                             share experiences, learn from each other, and grow together.
                         </p>
                         <p className="about__founder-bio">
-                            Under his leadership, IHRC has grown from a small group of HR enthusiasts into
-                            Indore's most vibrant and recognized HR community, hosting impactful events,
-                            workshops, and networking sessions that have touched hundreds of careers.
+                            Under his leadership, Indore Hr Circle has grown from a small group of HR enthusiasts into
+                            Central's India's most vibrant and recognized HR community, hosting impactful events,
+                            workshops, and networking sessions that have touched thousands of careers.
                         </p>
 
                         <blockquote className="about__founder-quote">

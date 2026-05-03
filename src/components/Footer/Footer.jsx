@@ -8,6 +8,11 @@ const Footer = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
+
+    const mobile = () => {
+        // hide my number
+    }
+
     const quickLinks = [
         { label: 'About Us', href: '#about' },
         { label: 'Member Benefits', href: '#benefits' },
@@ -25,8 +30,8 @@ const Footer = () => {
     ]
 
     const socials = [
-        { icon: <FaLinkedinIn />, href: '#', label: 'LinkedIn' },
-        { icon: <FaInstagram />, href: '#', label: 'Instagram' },
+        { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/company/ihrc-indore-hr-circle-community/', label: 'LinkedIn' },
+        { icon: <FaInstagram />, href: 'https://www.instagram.com/indorehrcircle?igsh=MXRhbzB0cmo2enkxbw==', label: 'Instagram' },
         { icon: <FaFacebookF />, href: '#', label: 'Facebook' },
         { icon: <FaTwitter />, href: '#', label: 'Twitter' },
         { icon: <FaYoutube />, href: '#', label: 'YouTube' }
@@ -66,7 +71,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    
                     <div className="footer__column">
                         <h4 className="footer__column-title">Quick Links</h4>
                         <ul className="footer__links">
@@ -96,15 +101,15 @@ const Footer = () => {
                         <div className="footer__contact-items">
                             <div className="footer__contact-item">
                                 <FiMail className="footer__contact-icon" />
-                                <span>indorehrcircle@gmail.com</span>
+                                <span style={{fontWeight:"600px"}}>indorehrcircle@gmail.com</span>
                             </div>
-                            <div className="footer__contact-item">
+                            {/* <div className="footer__contact-item">
                                 <FiPhone className="footer__contact-icon" />
                                 <span>+91 99269 80076</span>
-                            </div>
+                            </div> */}
                             <div className="footer__contact-item">
                                 <FiMapPin className="footer__contact-icon" />
-                                <span>Vijay Nagar, Indore, MP</span>
+                                <span style={{textTransform:"uppercase"}}>Indore, madhya pradesh</span>
                             </div>
                         </div>
                     </div>
@@ -125,6 +130,7 @@ const Footer = () => {
                         aria-label="Back to top"
                         id="back-to-top-btn"
                     >
+
                         <FiArrowUp />
                     </button>
                 </div>

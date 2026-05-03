@@ -21,7 +21,7 @@ const Hero = () => {
     }, [])
 
     const stats = [
-        { icon: <FiUsers />, value: '100+', label: 'HR Professionals' },
+        { icon: <FiUsers />, value: '1000+', label: 'HR Professionals' },
         { icon: <FiCalendar />, value: '10+', label: 'Events Hosted' },
         { icon: <FiAward />, value: '2+', label: 'Years of Impact' },
     ]
@@ -36,7 +36,7 @@ const Hero = () => {
                 <div className="hero__bg-grid"></div>
             </div>
 
-            <div style={{marginTop:"60PX"}} className="hero__container container">
+            <div style={{ marginTop: "60PX" }} className="hero__container container">
                 <div className="hero__content">
                     <div className="hero__badge">
                         <span className="hero__badge-dot"></span>
@@ -57,8 +57,9 @@ const Hero = () => {
                     </div>
 
                     <p className="hero__subtitle">
-                        Join Indore's most vibrant community of HR leaders, practitioners, and enthusiasts.
-                        Build meaningful connections, share insights, and shape the future of people management.
+                        Join MP’s top leading HR community — a circle of HR and corporate professionals.
+                        Indore Hr Circle empowers future talent through unique events and engaging initiatives.
+                        Creating leaders, driving knowledge sharing, and promoting work-life balance.
                     </p>
 
                     <div className="hero__actions">

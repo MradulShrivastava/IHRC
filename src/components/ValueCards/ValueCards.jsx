@@ -23,12 +23,12 @@ const ValueCards = () => {
         {
             color: 'purple',
             heading: "Indore's most authentic and supportive HR community.",
-            body: "Join hundreds of passionate professionals sharing real experiences, practical tools, and meaningful conversations that strengthen HR practices across Indore."
+            body: "Join thousands of passionate professionals sharing real experiences, practical tools, and meaningful conversations that strengthen HR practices across Indore."
         },
         {
             color: 'gold',
-            heading: "At IHRC, you'll find knowledge, yes — but you will also find connection, understanding, and friendship.",
-            body: "You'll meet HR professionals from across Indore who share your challenges, your wins, and your passion for making workplaces better."
+            heading: "At IHRC/indore hr circle, you'll find knowledge, yes — but you will also find connection, understanding, and friendship.",
+            body: "You'll meet CEO's / CFO's & HR professionals from across M.P who share your challenges, your wins, and your passion for making workplaces better."
         },
         {
             color: 'pink',
