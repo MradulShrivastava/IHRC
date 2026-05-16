@@ -1,9 +1,13 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { FiMail, FiPhone, FiMapPin, FiArrowUp } from 'react-icons/fi'
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import './Footer.css'
 
 const Footer = () => {
+    const location = useLocation()
+    const homePrefix = location.pathname === '/' ? '' : '/'
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
@@ -14,11 +18,11 @@ const Footer = () => {
     }
 
     const quickLinks = [
-        { label: 'About Us', href: '#about' },
-        { label: 'Member Benefits', href: '#benefits' },
-        { label: 'Events', href: '#events' },
-        { label: 'Join IHRC', href: '#join' },
-        { label: 'Contact Us', href: '#contact' }
+        { label: 'About Us', href: `${homePrefix}#about` },
+        { label: 'Our Team', href: '/team', isRoute: true },
+        { label: 'Events', href: `${homePrefix}#events` },
+        { label: 'Join IHRC', href: `${homePrefix}#join` },
+        { label: 'Contact Us', href: `${homePrefix}#contact` }
     ]
 
     const resources = [
@@ -73,11 +77,15 @@ const Footer = () => {
 
                     
                     <div className="footer__column">
-                        <h4 className="footer__column-title">Quick Links</h4>
+                            <h4 className="footer__column-title">Quick Links</h4>
                         <ul className="footer__links">
                             {quickLinks.map((link, index) => (
                                 <li key={index}>
-                                    <a href={link.href} className="footer__link">{link.label}</a>
+                                    {link.isRoute ? (
+                                        <Link to={link.href} className="footer__link">{link.label}</Link>
+                                    ) : (
+                                        <a href={link.href} className="footer__link">{link.label}</a>
+                                    )}
                                 </li>
                             ))}
                         </ul>
