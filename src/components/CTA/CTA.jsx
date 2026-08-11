@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { FiArrowRight, FiMail } from 'react-icons/fi'
 import './CTA.css'
+import { JOIN_FORM_LINK_PROPS } from '../../constants/links'
 
 const CTA = () => {
     const sectionRef = useRef(null)
@@ -48,10 +49,14 @@ const CTA = () => {
                                     id="cta-email-input"
                                 />
                             </div>
-                            <button className="cta__submit" id="cta-submit-btn">
+                            <a
+                                {...JOIN_FORM_LINK_PROPS}
+                                className="cta__submit"
+                                id="cta-submit-btn"
+                            >
                                 Join IHRC
                                 <FiArrowRight className="cta__submit-icon" />
-                            </button>
+                            </a>
                         </div>
 
                         <p className="cta__disclaimer">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { FiArrowLeft, FiArrowRight, FiHeart, FiStar } from 'react-icons/fi'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import ProfileMedia from '../../components/ProfileMedia/ProfileMedia'
 import img1 from "../../Assets/Images/img1.jpeg"
 import img2 from "../../Assets/Images/img2.jpeg"
 import img3 from "../../Assets/Images/img3.jpeg"
@@ -27,27 +28,27 @@ const TeamPage = () => {
             accent: 'gold',
             summary:
                 'Shapes collaborations, events, and learning opportunities that keep the circle practical, credible, and high impact for members.',
-            mayu: 'Strategic Programs'
+            focus: 'Strategic Programs'
         },
         {
             name: 'IHRC Leadership Team',
-            role: 'Anamika Mishra',
-            image: '/images/team-member-1.jpeg',
+            role: 'Deepa Vishwakarma',
             accent: 'pink',
             summary:
                 'Strengthens trusted member relationships and helps every professional interaction inside IHRC feel personal, warm, and worthwhile.',
-            mayu: 'Member Engagement'
+            focus: 'Member Engagement',
+            isPlaceholder: true
         },
 
-        {
-            name: 'IHRC Leadership Team',
-            role: 'Aastha Shrivastava',
-            image: '/images/team-member-3.jpeg',
-            accent: 'teal',
-            summary:
-                'Brings thoughtful coordination and consistent follow-through so every IHRC initiative feels smooth, polished, and member-focused.',
-            mayuu: 'Operations Excellence'
-        },
+        // {
+        //     name: 'IHRC Leadership Team',
+        //     role: 'Aastha Shrivastava',
+        //     image: '/images/team-member-3.jpeg',
+        //     accent: 'teal',
+        //     summary:
+        //         'Brings thoughtful coordination and consistent follow-through so every IHRC initiative feels smooth, polished, and member-focused.',
+        //     mayuu: 'Operations Excellence'
+        // },
 
         {
             name: 'IHRC Leadership Team',
@@ -56,7 +57,7 @@ const TeamPage = () => {
             accent: 'teal',
             summary:
                 'Brings thoughtful coordination and consistent follow-through so every IHRC initiative feels smooth, polished, and member-focused.',
-            mayuu: 'Operations Excellence'
+            focus: 'Operations Excellence'
         },
 
         {
@@ -65,8 +66,8 @@ const TeamPage = () => {
             image: img2,
             accent: 'teal',
             summary:
-                'Brings thoughtful coordination and consistent follow-through so every IHRC initiative feels smooth, polished, and member-focused.',
-            mayuu: 'Operations Excellence'
+                'Helps keep partnerships, member support, and internal coordination thoughtful so the community experience stays strong and dependable.',
+            focus: 'Community Coordination'
         },
 
         {
@@ -75,10 +76,12 @@ const TeamPage = () => {
             image: img3,
             accent: 'teal',
             summary:
-                'Brings thoughtful coordination and consistent follow-through so every IHRC initiative feels smooth, polished, and member-focused.',
-            mayuu: 'Operations Excellence'
+                'Supports member-facing initiatives with care and consistency so IHRC conversations and programs feel polished and welcoming.',
+            focus: 'Member Support'
         }
     ]
+
+    const supportingMembers = teamMembers.slice(1)
 
     return (
         <>
@@ -109,8 +112,8 @@ const TeamPage = () => {
 
                             <div className="team-hero__stats">
                                 <div className="team-hero__stat">
-                                    <strong>4+</strong>
-                                    <span>Core Leaders</span>
+                                    <strong>{teamMembers.length}</strong>
+                                    <span>Team Members</span>
                                 </div>
                                 <div className="team-hero__stat">
                                     <strong>1000+</strong>
@@ -129,9 +132,10 @@ const TeamPage = () => {
                     <div className="container">
                         <div className="team-showcase__feature">
                             <div className="team-showcase__feature-image">
-                                <img
-                                    src={teamMembers[0].image}
+                                <ProfileMedia
+                                    image={teamMembers[0].image}
                                     alt={teamMembers[0].name}
+                                    label={teamMembers[0].name}
                                     className="team-showcase__image"
                                 />
                                 <div className="team-showcase__glow"></div>
@@ -164,15 +168,17 @@ const TeamPage = () => {
                         </div>
 
                         <div className="team-grid">
-                            {teamMembers.slice(1).map((member, index) => (
+                            {supportingMembers.map((member, index) => (
                                 <article
-                                    className={`team-card team-card--${member.accent}`}
+                                    className={`team-card team-card--${member.accent} ${supportingMembers.length === 5 && index === 3 ? 'team-card--offset-left' : ''} ${supportingMembers.length === 5 && index === 4 ? 'team-card--offset-right' : ''}`.trim()}
                                     key={index}
                                 >
                                     <div className="team-card__image-wrap">
-                                        <img
-                                            src={member.image}
+                                        <ProfileMedia
+                                            image={member.image}
                                             alt={member.role}
+                                            label={member.role}
+                                            isPlaceholder={member.isPlaceholder}
                                             className="team-card__image"
                                         />
                                         <span className="team-card__focus">

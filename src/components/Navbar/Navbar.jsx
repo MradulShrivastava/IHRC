@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { FiChevronDown, FiMenu, FiX } from 'react-icons/fi'
 import './Navbar.css'
 import logo from "../../Assets/Images/ihrclogo.jpeg"
+import { JOIN_FORM_LINK_PROPS } from '../../constants/links'
 
 const Navbar = () => {
     const location = useLocation()
@@ -99,11 +100,11 @@ const Navbar = () => {
                         </div>
                     ))}
 
-                    <a href={`${homePrefix}#join`} className="navbar__cta-mobile">Join Now</a>
+                    <a {...JOIN_FORM_LINK_PROPS} className="navbar__cta-mobile">Join Now</a>
                 </div>
 
                 {/* CTA Button */}
-                <a href={`${homePrefix}#join`} className="navbar__cta">
+                <a {...JOIN_FORM_LINK_PROPS} className="navbar__cta">
                     Join Now
                 </a>
 

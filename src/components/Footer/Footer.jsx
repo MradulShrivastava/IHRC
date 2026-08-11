@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { FiMail, FiPhone, FiMapPin, FiArrowUp } from 'react-icons/fi'
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import './Footer.css'
+import { GOOGLE_FORM_URL, JOIN_FORM_LINK_PROPS } from '../../constants/links'
 
 const Footer = () => {
     const location = useLocation()
@@ -21,7 +22,7 @@ const Footer = () => {
         { label: 'About Us', href: `${homePrefix}#about` },
         { label: 'Our Team', href: '/team', isRoute: true },
         { label: 'Events', href: `${homePrefix}#events` },
-        { label: 'Join IHRC', href: `${homePrefix}#join` },
+        { label: 'Join IHRC', href: GOOGLE_FORM_URL },
         { label: 'Contact Us', href: `${homePrefix}#contact` }
     ]
 
@@ -83,6 +84,8 @@ const Footer = () => {
                                 <li key={index}>
                                     {link.isRoute ? (
                                         <Link to={link.href} className="footer__link">{link.label}</Link>
+                                    ) : link.href === GOOGLE_FORM_URL ? (
+                                        <a {...JOIN_FORM_LINK_PROPS} className="footer__link">{link.label}</a>
                                     ) : (
                                         <a href={link.href} className="footer__link">{link.label}</a>
                                     )}
@@ -109,7 +112,13 @@ const Footer = () => {
                         <div className="footer__contact-items">
                             <div className="footer__contact-item">
                                 <FiMail className="footer__contact-icon" />
-                                <span style={{fontWeight:"600px"}}>indorehrcircle@gmail.com</span>
+                                <a
+                                    href="mailto:mradulshrivastavams@gmail.com"
+                                    className="footer__link"
+                                    style={{ fontWeight: '600' }}
+                                >
+                                    mradulshrivastavams@gmail.com
+                                </a>
                             </div>
                             {/* <div className="footer__contact-item">
                                 <FiPhone className="footer__contact-icon" />

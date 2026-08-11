@@ -186,7 +186,7 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 28px;
 }
 
@@ -222,6 +222,7 @@
 }
 
 .team-card {
+    grid-column: span 4;
     position: relative;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.86);
@@ -257,6 +258,14 @@
 
 .team-card--teal::before {
     background: linear-gradient(135deg, #14b8a6, #06b6d4);
+}
+
+.team-card--offset-left {
+    grid-column: 3 / span 4;
+}
+
+.team-card--offset-right {
+    grid-column: 7 / span 4;
 }
 
 .team-card__image-wrap {
@@ -388,7 +397,13 @@
     }
 
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .team-card,
+    .team-card--offset-left,
+    .team-card--offset-right {
+        grid-column: auto;
     }
 }
 

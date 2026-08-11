@@ -15,11 +15,12 @@
 
 .benefits__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 28px;
 }
 
 .benefits__card {
+    grid-column: span 4;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -72,6 +73,14 @@
 
 .benefits__card--teal::before {
     background: linear-gradient(135deg, #14B8A6, #06B6D4);
+}
+
+.benefits__card--offset-left {
+    grid-column: 3 / span 4;
+}
+
+.benefits__card--offset-right {
+    grid-column: 7 / span 4;
 }
 
 .benefits__card-image-wrap {
@@ -181,13 +190,19 @@
 /* Responsive */
 @media (max-width: 1080px) {
     .benefits__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .benefits__card,
+    .benefits__card--offset-left,
+    .benefits__card--offset-right {
+        grid-column: auto;
     }
 }
 
 @media (max-width: 900px) {
     .benefits__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
